@@ -1,0 +1,10 @@
+data: {
+	batteryLevel: "90%",
+	starbucksBalance: "2.50",
+	lastStarbucksVisit: "10 days ago",
+	lastCheckin: "Berlin Hbf",
+	lastSong: {
+		name: "Things We Lost by Bastille", 
+		link: "spotify:track:3pm1X3oQBKQ4vcp3i9PWRg"
+	}
+}
