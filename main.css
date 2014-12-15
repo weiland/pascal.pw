@@ -1,4 +1,3 @@
-@import url('http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic|Cherry+Swash:700,400');
 
 * {
     margin: 0;
@@ -20,7 +19,7 @@ html, body {
 body {
     background: #EEE;
     color: #333;
-    font-family: 'IM Fell DW Pica', serif;
+    font-family: Helvetica, serif;
     font-size: 1em;
 }
 
@@ -60,14 +59,16 @@ a:hover:before {
     margin: auto;
 }
 
-#header {
+.headline {
     width: 400px;
     height: 200px;
     margin: 0 auto 110px;
     display: block;
     position: relative;
-    font-family: 'Cherry Swash', cursive;
-    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #wrapper {
