@@ -18,27 +18,27 @@ html, body {
 
 body {
     background: #222;
-    color: #EEE;
+    color: #CCC;
     font-family: Helvetica, serif;
     font-size: 1em;
 }
 
 a:link, a:visited {
-    color: white;
+    color: #9E3A53;
     border: 0;
 }
 
 a:hover {
-    color: #cc0000;
+    color: #3A849C;
 }
 
-.table {
+.main {
     display: table;
     height: 100%;
     width: 100%;
 }
 
-.cell {
+.content {
     display: table-cell;
     vertical-align: middle;
 }
@@ -55,6 +55,7 @@ a:hover {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    color: #EEE;
 }
 .photo {
     margin: 30px auto 0;
@@ -67,125 +68,12 @@ a:hover {
     background-position: -12px 50%;
 }
 
-.starbucks {
-    color: #007042;
-    font-weight: bold;
-}
-
-
-/*  Header and Animation  */
-.h-p, .h-w, .h-r, .h-a, .h-e, .h-b   {
-    width: 120px;
-    display: block;
-    vertical-align: middle !important;
-    text-align: center;
+.has-dragmode .photo {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    left: 50%;
+    margin-left: -100px;
 }
 
-.h-w, .h-a{
-    left: 95px;
-}
-
-.h-w, .h-r, .h-e {
-    top: 100px;
-}
-
-.h-b  {
-    display: block;
-    top: 200px;
-    left: 95px;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-}
-
-.h-e {
-    display: block;
-    left: 208px;
-}
-
-.h-r {
-    display: block;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-}
-
-.h-p, .h-w {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -webkit-animation: rota .7s .69s ease;
-    animation: rota .7s .69s ease;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-.h-b, .h-r {
-    -webkit-animation: fadeOut .7s 1.4s ease;
-    animation: fadeOut .7s 1.4s ease;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-.h-a, .h-e {
-    opacity: 0;
-    -webkit-animation: fadeIn .4s 2.1s ease;
-    animation: fadeIn .4s 2.1s ease;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes rota {
-    from {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-    }
-    to {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-}
-@keyframes rota {
-    from {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-    }
-    to {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-}
-
-@-webkit-keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.has-dragmode .social {
+    margin-top: 230px;
 }
