@@ -1,11 +1,11 @@
 (function() {
+  // i know that there is no raf and i do "animate" left & top instead of using transform
   var
     stateMouseDown = false,
     offset = {x:0, y:0},
     leMe = document.getElementsByClassName('photo')[0];
 
   leMe.addEventListener ('mousedown' , eleMouseDown , false);
-
   //leMe.addEventListener ('touchmove' , eleTouchMove , false);
 
   function eleMouseDown(e) {
@@ -19,7 +19,6 @@
 
   function eleTouchMove(e) {
     var t = e.targetTouches[0];
-
     moveMe(t.pageX, t.pageY - offset.y);
     e.preventDefault();
   }
