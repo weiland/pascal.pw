@@ -62,4 +62,12 @@
         }, Function.prototype );
     } catch ( e ) {}
   })();
+  
+  (function vibrator() {
+    try {
+      navigator.vibrate(100);
+       
+    } catch ( e ) {}
+  })();
+  
 })();
